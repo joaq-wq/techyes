@@ -1,0 +1,78 @@
+main {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+h1,
+h2 {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.highlight {
+  color: #b000ff;
+}
+
+.btn-main {
+  margin-top: 30px;
+  background: #b000ff;
+  padding: 12px 25px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-main:hover {
+  background: #d44aff;
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 992px) {
+  h1,
+  h2 {
+    font-size: 55px;
+  }
+
+  main {
+    padding: 80px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 45px;
+  }
+
+  main {
+    padding: 60px 15px;
+  }
+
+  .btn-main {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 36px;
+  }
+
+  main {
+    padding: 50px 10px;
+  }
+
+  .btn-main {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+}

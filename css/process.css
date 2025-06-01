@@ -1,0 +1,136 @@
+.process-section {
+  width: 100%;
+  background: radial-gradient(circle at center, #0a0a0a 20%, #06131a 100%);
+  padding: 80px 40px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+.process-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header */
+.process-section .header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.process-section .subtitle {
+  color: #00ffc3;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.process-section h2 {
+  color: white;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.process-section h2 .highlight {
+  color: #00ffc3;
+}
+
+.process-section .description {
+  max-width: 600px;
+  margin: 20px auto 0;
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+/* Steps */
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Cada Step */
+.process-steps .step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.process-steps .step:hover {
+  transform: translateY(-5px);
+}
+
+/* Alternar posição */
+.process-steps .step:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Conteúdo Texto */
+.process-steps .step-content {
+  flex: 1;
+}
+
+/* Área da Imagem */
+.process-steps .step-image {
+  width: 30%;
+  height: 250px;
+  background-color: #1f2937;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Números */
+.process-steps .step-number {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #00ffc3;
+  color: #0a0a0a;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00ffc3;
+}
+
+.process-steps .step-title {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.process-steps .step-description {
+  color: #9ca3af;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .process-steps .step {
+    flex-direction: column;
+  }
+
+  .process-steps .step:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .process-steps .step-image {
+    width: 100%;
+    height: 200px;
+  }
+}

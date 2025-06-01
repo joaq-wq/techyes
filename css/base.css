@@ -1,0 +1,16 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  min-height: 100vh;
+  background: linear-gradient(135deg,  #000, #3f0071, #000, #002f5f, #000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

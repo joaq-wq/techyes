@@ -1,0 +1,135 @@
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #0a0a0a;
+  color: white;
+  width: 100%;
+  padding: 100px 20px;
+}
+
+.testimonials-section .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.testimonials-section .header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonials-section .section-number {
+  color: #d44aff;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.testimonials-section h2 {
+  font-size: 36px;
+  line-height: 1.4;
+}
+
+.testimonials-section .highlight {
+  color: white;
+}
+
+.testimonials-section .gradient {
+  background: linear-gradient(to right, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.testimonials-section .description {
+  color: #9ca3af;
+  max-width: 600px;
+  margin: 20px auto 0;
+  line-height: 1.6;
+}
+
+/* Cards Layout */
+.testimonials-section .cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.testimonials-section .card {
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 80px 20px 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.4);
+}
+
+/* Avatar */
+.testimonials-section .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  background-color: #1b1b1b;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Quote Icon */
+.testimonials-section .quote-icon {
+  font-size: 60px;
+  color: #e879f9; /* Rosa Neon conforme imagem */
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+/* Testimonial Text */
+.testimonials-section .testimonial-text {
+  font-size: 16px;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Person Info */
+.testimonials-section .person-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.testimonials-section .person-info strong {
+  color: white;
+  font-size: 16px;
+}
+
+.testimonials-section .person-info span {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .testimonials-section .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

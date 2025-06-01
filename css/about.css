@@ -1,0 +1,220 @@
+/* Wrapper com padding lateral e max-width */
+.who-we-are {
+  background-color: #0a0a0a;
+  padding: 100px 20px; /* Padding lateral mínimo para nunca ficar grudado */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.who-we-are .wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px; /* Padding lateral maior */
+  box-sizing: border-box;
+  border: 1px solid transparent; /* Borda invisível só pra garantir limites */
+}
+
+.who-we-are .header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+}
+
+.who-we-are .section-number {
+  color: #7160f8;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.who-we-are .section-title {
+  color: #ccc;
+  font-size: 14px;
+  border-left: 1px solid #333;
+  padding-left: 12px;
+}
+
+.who-we-are .content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ajuda na distribuição */
+}
+
+.who-we-are .image {
+  flex: 1 1 350px;
+  min-width: 300px;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.who-we-are .image img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.who-we-are .text {
+  flex: 1 1 350px;
+  min-width: 300px;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.who-we-are h2 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.who-we-are h2 .highlight {
+  color: #b586f8;
+}
+
+.who-we-are p {
+  margin: 20px 0;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.who-we-are .checklist {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.who-we-are .checklist li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 16px;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.who-we-are .checklist li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #b586f8;
+  font-weight: bold;
+}
+
+.who-we-are .info-signature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.who-we-are .info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.who-we-are .info .name {
+  color: #b586f8;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.who-we-are .info .role {
+  color: #999;
+  font-size: 14px;
+}
+
+.who-we-are .signature img {
+  width: 130px;
+  filter: drop-shadow(0 0 5px #b586f8);
+}
+
+/* RESPONSIVO */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .who-we-are .wrapper {
+    padding: 0 30px;
+  }
+
+  .who-we-are .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .who-we-are .header {
+    justify-content: center;
+  }
+
+  .who-we-are .info-signature {
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .who-we-are h2 {
+    font-size: 2.2rem;
+  }
+
+  .who-we-are .image,
+  .who-we-are .text {
+    max-width: 100%;
+    min-width: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .who-we-are {
+    padding: 70px 20px;
+  }
+
+  .who-we-are .wrapper {
+    padding: 0 20px;
+  }
+
+  .who-we-are h2 {
+    font-size: 2rem;
+  }
+
+  .who-we-are p,
+  .who-we-are .checklist li {
+    font-size: 15px;
+  }
+
+  .who-we-are .image,
+  .who-we-are .text {
+    flex-basis: 100%;
+    max-width: 100%;
+    min-width: auto;
+  }
+}
+
+/* Mobile muito pequeno */
+@media (max-width: 480px) {
+  .who-we-are {
+    padding: 60px 16px;
+  }
+
+  .who-we-are .wrapper {
+    padding: 0 16px;
+  }
+
+  .who-we-are h2 {
+    font-size: 1.8rem;
+  }
+
+  .who-we-are p,
+  .who-we-are .checklist li {
+    font-size: 14px;
+  }
+
+  .who-we-are .signature img {
+    width: 100px;
+  }
+}
